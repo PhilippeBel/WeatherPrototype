@@ -1,4 +1,10 @@
-.bar{
-z-index: -1;
+.wbar{
+position: relative;
 top: -48px;
+}
+
+.x-btn{
+    position: relative;
+    left: 16px;
+    z-index: 1;
 }
