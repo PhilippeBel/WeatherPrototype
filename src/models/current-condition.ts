@@ -1,7 +1,8 @@
 import { Wind } from './wind';
+import { WeatherObservation } from './weather-observation';
 
 export class CurrentCondition{
-    condition: string;
+    condition: WeatherObservation;
     temperatureCelsius: number;
     pressureKpa: number;
     humidity: number;

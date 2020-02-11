@@ -1,6 +1,5 @@
 <div class="jumbotron text-light bg-dark" >
-    <i class="display-3 wi wi-lightning"></i><br/>
 <div class="text-light" *ngFor="let city of cities">
-    <h1>{{city.name}}</h1>
+    <h1>{{city.name}} <i class="display-4 wi {{city.currCondition.condition.icon}}"></i><br/></h1>
   </div>
 </div>
