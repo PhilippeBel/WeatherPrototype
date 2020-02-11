@@ -1,4 +1,6 @@
-class CurrentCondition{
+import { Wind } from './wind';
+
+export class CurrentCondition{
     condition: string;
     temperatureCelsius: number;
     pressureKpa: number;

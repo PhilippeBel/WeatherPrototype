@@ -1,4 +1,7 @@
-const CITIES_MOCK: City[] = [
+import { PROVINCES_MOCK } from './province-mocks';
+import { City } from 'src/models/city';
+
+export const CITIES_MOCK: City[] = [
     {id: 0, name: "Montréal", province: PROVINCES_MOCK[0]},
     {id: 1, name: "Québec", province: PROVINCES_MOCK[0]},
     {id: 2, name: "Toronto", province: PROVINCES_MOCK[1]},
