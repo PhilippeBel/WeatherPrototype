@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListCitiesComponent implements OnInit {
 
+  cities: string[] = [
+    "Montréal", "Toronto", "Vancouver", "Québec", "Saguenay", "Ottawa"
+  ];
+
   constructor() { }
 
   ngOnInit() {
