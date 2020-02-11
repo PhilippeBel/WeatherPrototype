@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { City } from 'src/models/city';
 import { CITIES_MOCK } from 'src/mocks/city-mocks';
+import { Observable, of } from 'rxjs';
 
 
 @Injectable({
@@ -10,7 +11,7 @@ export class CityService {
 
   constructor() { }
 
-  getCities(): City[] {
-    return CITIES_MOCK;
+  getCities(): Observable<City[]> {
+    return of(CITIES_MOCK);
   }
 }
