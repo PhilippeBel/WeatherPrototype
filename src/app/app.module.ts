@@ -8,6 +8,7 @@ import { WarningBarComponent } from './warning-bar/warning-bar.component';
 import { ListCitiesComponent } from './list-cities/list-cities.component';
 import { ListCitiesElemComponent } from './list-cities-elem/list-cities-elem.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     SearchBarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

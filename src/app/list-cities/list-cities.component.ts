@@ -10,13 +10,22 @@ import { CityService } from 'src/services/city.service';
 export class ListCitiesComponent implements OnInit {
 
   cities: City[];
+  displayCities: City[];
 
   constructor(private cityService: CityService) { }
 
   ngOnInit() {
     this.cityService.getCities().subscribe(
-      cities => this.cities =  cities
+      cities => {this.cities =  cities;
+        this.displayCities = cities;}
     );
   }
 
+  filterCities(text: string){
+    this.displayCities = this.cities.filter(city => this.formatText(city.name).includes(this.formatText(text)));
+  }
+
+  private formatText(str: string): string{
+    return str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
 }

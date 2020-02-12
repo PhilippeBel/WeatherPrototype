@@ -1,6 +1,6 @@
 <div class="pb-2">
 <div class="input-group search-bar text-white ">
-<input type="text" class="form-control search-bar text-white" placeholder="Search city" >
+<input [(ngModel)]="text" (keyup)="TextChange()" (change)="TextChange()"  type="text" class="form-control search-bar text-white" placeholder="Search city" >
 <div class="input-group-append">
     <button class="btn btn-outline-secondary" type="button">Search</button>
   </div>
