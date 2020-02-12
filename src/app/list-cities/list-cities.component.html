@@ -1,7 +1,5 @@
 <div class="text-light bg-dark container jumbotron" >
-<div class="row align-bottom city-name" *ngFor="let city of cities" style="height: 96px;">
-    <div class="col font-weight-bold align-bottom">{{city.name}}</div>
-    <div class="col"><i class="display-4 wi {{city.currCondition.condition.icon}}"></i></div>
-    <div class="col">{{city.currCondition.temperatureCelsius}}C°</div>
+<div class="align-bottom city-name" *ngFor="let city of cities" style="height: 96px;">
+  <app-list-cities-elem class="row" [city]="city"></app-list-cities-elem>
   </div>
 </div>
