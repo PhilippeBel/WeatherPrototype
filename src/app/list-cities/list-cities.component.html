@@ -1,4 +1,5 @@
-<div class="text-light bg-dark container jumbotron" >
+<div class="text-light bg-dark container jumbotron pt-3" >
+  <app-search-bar></app-search-bar>
 <div class="align-bottom city-name" *ngFor="let city of cities" style="height: 96px;">
   <app-list-cities-elem class="row" [city]="city"></app-list-cities-elem>
   </div>

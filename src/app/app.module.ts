@@ -7,6 +7,7 @@ import { UpperBarComponent } from './upper-bar/upper-bar.component';
 import { WarningBarComponent } from './warning-bar/warning-bar.component';
 import { ListCitiesComponent } from './list-cities/list-cities.component';
 import { ListCitiesElemComponent } from './list-cities-elem/list-cities-elem.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ListCitiesElemComponent } from './list-cities-elem/list-cities-elem.com
     UpperBarComponent,
     WarningBarComponent,
     ListCitiesComponent,
-    ListCitiesElemComponent
+    ListCitiesElemComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule
