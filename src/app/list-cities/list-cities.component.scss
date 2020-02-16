@@ -1,3 +1,17 @@
 .city-name{
     font-size: 48px;
 }
+
+.element {
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: 0.3s;
+    padding: 8px;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .element:hover {
+      background-color: #11111B;
+      border-radius: 32px;
+    }

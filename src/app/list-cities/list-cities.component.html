@@ -1,6 +1,9 @@
 <div class="text-light bg-dark container jumbotron pt-3" >
   <app-search-bar (textEvent)="filterCities($event)"></app-search-bar>
 <div class="align-bottom city-name" *ngFor="let city of displayCities" style="height: 96px;">
-  <app-list-cities-elem class="row" [city]="city"></app-list-cities-elem>
+  <div class="element" (click)="accessCity(city.id)">
+    <app-list-cities-elem class="row" [city]="city"></app-list-cities-elem>
+  </div>
+
   </div>
 </div>

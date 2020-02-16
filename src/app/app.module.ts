@@ -9,6 +9,8 @@ import { ListCitiesComponent } from './list-cities/list-cities.component';
 import { ListCitiesElemComponent } from './list-cities-elem/list-cities-elem.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { FormsModule } from '@angular/forms';
+import { CurrentConditionsComponent } from './current-conditions/current-conditions.component';
+import { CityPageComponent } from './city-page/city-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FormsModule } from '@angular/forms';
     WarningBarComponent,
     ListCitiesComponent,
     ListCitiesElemComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    CurrentConditionsComponent,
+    CityPageComponent
   ],
   imports: [
     BrowserModule,

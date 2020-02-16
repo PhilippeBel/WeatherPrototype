@@ -21,6 +21,10 @@ export class ListCitiesComponent implements OnInit {
     );
   }
 
+  accessCity(id: number){
+    console.log(id);
+  }
+
   filterCities(text: string){
     this.displayCities = this.cities.filter(city => this.formatText(city.name).includes(this.formatText(text)));
   }
