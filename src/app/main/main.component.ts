@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  @Input() backgroundImage: string;
   constructor() { }
 
   ngOnInit() {
+    this.backgroundImage = "assets\backgrounds\alberta-lake.jpg";
   }
 
 }
