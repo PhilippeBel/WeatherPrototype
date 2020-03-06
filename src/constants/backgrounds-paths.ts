@@ -4,7 +4,7 @@ export const BACKGROUND_PATH : string = "../assets/backgrounds/";
 export const BACKGROUNDS_NAME : string[] = 
 ["alberta.jpg",
 "aurora.jpg",
-"autumn.jph",
+"autumn.jpg",
 "bc.jpg",
 "clouds.jpg",
 "lake.jpg",

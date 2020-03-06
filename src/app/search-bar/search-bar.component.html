@@ -1,9 +1,9 @@
-<div class="pb-2">
-<div class="input-group search-bar text-white ">
-<input [(ngModel)]="text" (keyup)="TextChange()" (change)="TextChange()"  type="text" class="form-control search-bar text-white" placeholder="Search city" >
-<div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button">Search</button>
-  </div>
-</div>
-</div>
-<hr class="bg-light mb-2"/>
+<mat-card class="text-white search-card">
+<mat-form-field class="search-bar">
+<mat-label>Search City</mat-label>
+<input matInput [(ngModel)]="text"
+(keyup)="TextChange()" (change)="TextChange()" 
+type="text" class="text-white" 
+placeholder="Ex. Toronto">
+</mat-form-field>
+</mat-card>

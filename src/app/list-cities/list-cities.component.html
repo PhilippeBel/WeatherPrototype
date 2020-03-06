@@ -1,9 +1,12 @@
-<div class="text-light bg-dark container jumbotron pt-3" >
-  <app-search-bar (textEvent)="filterCities($event)"></app-search-bar>
+<app-search-bar (textEvent)="filterCities($event)"></app-search-bar>
+
+<mat-card class="text-light pt-3 list-card" >
+<mat-list>
 <div class="align-bottom city-name" *ngFor="let city of displayCities" style="height: 96px;">
   <div class="element" (click)="accessCity(city.id)">
     <app-list-cities-elem class="row" [city]="city"></app-list-cities-elem>
   </div>
-
+  <mat-divider></mat-divider>
   </div>
-</div>
+</mat-list>
+</mat-card>
