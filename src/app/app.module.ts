@@ -18,6 +18,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card'; 
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { SideMenuComponent } from './side-menu/side-menu.component';
+import { MatSidenavModule, MatSidenav } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { MatIconModule } from '@angular/material/icon';
     ListCitiesElemComponent,
     SearchBarComponent,
     CurrentConditionsComponent,
-    CityPageComponent
+    CityPageComponent,
+    SideMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule,
     MatListModule,
     MatIconModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
