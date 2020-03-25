@@ -1,7 +1,9 @@
 <mat-sidenav-container class="main-container">
-<app-upper-bar></app-upper-bar>
 <mat-sidenav mode="side" opened>Start</mat-sidenav>
+<mat-sidenav-content>
+<app-upper-bar></app-upper-bar>
 <div class="main-bg" [style.background-image]="'url(' + backgroundImage + ')'">
 <app-main></app-main>
 </div>
+</mat-sidenav-content>
 </mat-sidenav-container>

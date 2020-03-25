@@ -19,7 +19,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { SideMenuComponent } from './side-menu/side-menu.component';
-import { MatSidenavModule, MatSidenav } from '@angular/material/sidenav';
+import { MatSidenavModule} from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button'; 
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { MatSidenavModule, MatSidenav } from '@angular/material/sidenav';
     MatListModule,
     MatIconModule,
     MatSidenavModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
