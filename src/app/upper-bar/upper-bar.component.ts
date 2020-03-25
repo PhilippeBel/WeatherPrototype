@@ -17,7 +17,19 @@ export class UpperBarComponent implements OnInit {
   }
 
   toggleSideNav(){
+    //this.playAudio(this.sideNav.opened);
     this.sideNav.toggle();
+  }
+
+  playAudio(isOpened: boolean){
+    let audioPath: string;
+    if(isOpened)
+      audioPath = "assets/sounds/click_close.wav";
+    else
+      audioPath = "assets/sounds/click_expand.wav";
+
+      var audio = new Audio(audioPath);
+      audio.play();
   }
 
 }

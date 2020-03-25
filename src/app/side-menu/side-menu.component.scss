@@ -1,5 +1,16 @@
+@import '~@angular/material/theming';
+
+@mixin name {
+    
+}
+
 .main-container{
     height: 100vh;
+}
+
+.main-content{
+    background-color: black;
+    color: black;
 }
 
 .main-bg{
@@ -10,6 +21,7 @@
     background-attachment: fixed;
     }
 
-    .side-menu{
-        width: 300px;
-    }
+.side-menu{
+    width: 300px;
+}
+
