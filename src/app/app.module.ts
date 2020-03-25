@@ -17,6 +17,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card'; 
 import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { MatListModule } from '@angular/material/list';
     MatInputModule,
     MatCardModule,
     MatListModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
