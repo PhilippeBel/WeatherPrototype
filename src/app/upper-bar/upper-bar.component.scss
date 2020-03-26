@@ -1,8 +1,9 @@
 .bar{
     width: 100%;
-    height: 96px;
-    padding-top: 16px;
-    position:fixed;
+    height: 15vh;
+    min-height: 64px;
+    padding-top: 8px;
+    position:relative;
     z-index: 2;
     }
     
