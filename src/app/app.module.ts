@@ -21,6 +21,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button'; 
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { LoadingPageComponent } from './loading-page/loading-page.component'; 
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { MatButtonModule } from '@angular/material/button';
     SearchBarComponent,
     CurrentConditionsComponent,
     CityPageComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    LoadingPageComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +50,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatIconModule,
     MatSidenavModule,
     MatButtonModule,
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

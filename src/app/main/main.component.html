@@ -1,3 +1,4 @@
 <div class="container main">
-<app-list-cities></app-list-cities>
+<app-loading-page *ngIf="!finishedLoading"></app-loading-page>
+<app-list-cities *ngIf="finishedLoading"></app-list-cities>
 </div>
