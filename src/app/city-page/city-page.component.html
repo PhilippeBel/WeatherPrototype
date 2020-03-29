@@ -1,2 +1,8 @@
-<p>city-page works!</p>
+<app-loading-page *ngIf="!city"></app-loading-page>
+
+<div *ngIf="city">
+<mat-card class="text-light pt-3 list-card" >
+<p>city-page: {{city.name}}</p>
 <app-current-conditions></app-current-conditions>
+</mat-card>
+</div>

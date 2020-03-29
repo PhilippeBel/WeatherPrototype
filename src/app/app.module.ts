@@ -23,6 +23,14 @@ import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button'; 
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { LoadingPageComponent } from './loading-page/loading-page.component'; 
+import { RouterModule, Routes } from '@angular/router';
+
+
+const appRoutes: Routes = [  
+{path: 'city/:id', component: CityPageComponent},
+{path: 'cities', component: ListCitiesComponent},
+{path: '', redirectTo: 'cities', pathMatch: 'full' }
+];
 
 @NgModule({
   declarations: [
@@ -51,6 +59,7 @@ import { LoadingPageComponent } from './loading-page/loading-page.component';
     MatSidenavModule,
     MatButtonModule,
     MatProgressSpinnerModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]

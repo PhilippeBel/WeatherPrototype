@@ -17,7 +17,8 @@ export class ListCitiesComponent implements OnInit {
   ngOnInit() {
     this.cityService.getCities().subscribe(
       cities => {this.cities =  cities;
-        this.displayCities = cities;}
+        this.displayCities = cities;
+      }
     );
   }
 

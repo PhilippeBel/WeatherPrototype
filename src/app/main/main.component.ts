@@ -10,18 +10,10 @@ export class MainComponent implements OnInit {
 
   @Input() backgroundImage: string;
 
-  finishedLoading: boolean;
-
   constructor() { }
 
   ngOnInit() {
-    this.finishedLoading = false;
     this.backgroundImage = "assets\backgrounds\alberta-lake.jpg";
-
-    timer(1000).subscribe(nb => {
-      this.finishedLoading = true;
-    })
-
   }
 
 }

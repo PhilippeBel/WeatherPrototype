@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
 
-  title = 'weather';
+  title = 'Weather Canada';
 }
