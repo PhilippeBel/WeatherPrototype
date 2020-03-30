@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { City } from 'src/models/city';
 import { CityService } from 'src/services/city.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-cities',
@@ -12,7 +13,7 @@ export class ListCitiesComponent implements OnInit {
   cities: City[];
   displayCities: City[];
 
-  constructor(private cityService: CityService) { }
+  constructor(private cityService: CityService, private router: Router) { }
 
   ngOnInit() {
     this.cityService.getCities().subscribe(
@@ -23,7 +24,7 @@ export class ListCitiesComponent implements OnInit {
   }
 
   accessCity(id: number){
-    console.log(id);
+    this.router.navigateByUrl("city/"+id.toString());
   }
 
   filterCities(text: string){

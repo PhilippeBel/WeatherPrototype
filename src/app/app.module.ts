@@ -29,7 +29,8 @@ import { RouterModule, Routes } from '@angular/router';
 const appRoutes: Routes = [  
 {path: 'city/:id', component: CityPageComponent},
 {path: 'cities', component: ListCitiesComponent},
-{path: '', redirectTo: 'cities', pathMatch: 'full' }
+{path: '', redirectTo: 'cities', pathMatch: 'full' },
+{path: '**', redirectTo: 'cities'}
 ];
 
 @NgModule({
