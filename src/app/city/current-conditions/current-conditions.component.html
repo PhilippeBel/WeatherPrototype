@@ -1,1 +1,14 @@
-<p>current-conditions works!</p>
+<mat-card class="text-light pt-3 main-card">
+    <div class="left-cell">
+    <mat-card-title class="condition">{{currentCondition.condition.name}}</mat-card-title>
+    <i class="display-4 wi icon {{currentCondition.condition.icon}}"></i>
+    <div class="temperature">{{currentCondition.temperatureCelsius}}°C</div>
+    </div>
+    <div class="right-cell">
+        <div>Pressure: {{currentCondition.pressureKpa}}Kpa</div>
+        <div>Humidity: {{currentCondition.humidity}}%</div>
+        <div>Dew point: {{currentCondition.dewPointCelsius}}°C</div>
+        <div>Visibility: {{currentCondition.visibilityKm}}km</div>
+        <div>Wind: {{currentCondition.wind.speedKph}}Kph</div>
+    </div>
+</mat-card>

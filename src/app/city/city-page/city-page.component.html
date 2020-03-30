@@ -4,6 +4,6 @@
 <mat-card class="text-light pt-3">
 <mat-card-title class="title-card">{{city.name}}</mat-card-title>
 </mat-card>
-<app-current-conditions></app-current-conditions>
+<app-current-conditions [currentCondition]="city.currCondition"></app-current-conditions>
 
 </div>
