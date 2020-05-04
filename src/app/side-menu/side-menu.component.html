@@ -1,6 +1,6 @@
 <app-upper-bar [sideNav] = "sidenav"></app-upper-bar>
 <mat-sidenav-container class="main-container" (backdropClick)="sidenav.close()">
-<mat-sidenav #sidenav mode="push" class="side-menu">Menu here</mat-sidenav>
+<mat-sidenav #sidenav mode="push" class="side-menu"><app-side-menu-list></app-side-menu-list></mat-sidenav>
 <mat-sidenav-content class="main-content">
 <div class="main-bg" [style.background-image]="'url(' + backgroundImage + ')'">
 <app-main></app-main>

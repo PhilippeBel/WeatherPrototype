@@ -24,6 +24,7 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { LoadingPageComponent } from './loading-page/loading-page.component'; 
 import { RouterModule, Routes } from '@angular/router';
+import { SideMenuListComponent } from './side-menu-list/side-menu-list.component';
 
 
 const appRoutes: Routes = [  
@@ -45,7 +46,8 @@ const appRoutes: Routes = [
     CurrentConditionsComponent,
     CityPageComponent,
     SideMenuComponent,
-    LoadingPageComponent
+    LoadingPageComponent,
+    SideMenuListComponent
   ],
   imports: [
     BrowserModule,
