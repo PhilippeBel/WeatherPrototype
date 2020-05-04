@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { SideMenuComponent } from '../side-menu/side-menu.component';
 
 @Component({
   selector: 'app-side-menu-list',
@@ -8,13 +9,21 @@ import { Router } from '@angular/router';
 })
 export class SideMenuListComponent implements OnInit {
 
-  public elements: Array<SideMenuElement> = new Array<SideMenuElement>();
+  @Input() sideMenu: SideMenuComponent;
+  elements: Array<SideMenuElement> = new Array<SideMenuElement>();
 
   constructor(private router: Router) { }
 
   ngOnInit() {
     this.elements.push({link: "",icon: "wi-day-sunny", text: "News" } as SideMenuElement);
     this.elements.push({link: "/cities",icon: "wi-day-sunny-overcast", text: "Current conditions" } as SideMenuElement);
+    this.elements.push({link: "/warnings",icon: "wi-storm-warning", text: "Watches & Warnings" } as SideMenuElement);
+    this.elements.push({link: "/radar",icon: "wi-rain", text: "Radar" } as SideMenuElement); 
+    this.elements.push({link: "/lightning",icon: "wi-lightning", text: "Lightning map" } as SideMenuElement);
   }
 
+  accessLink(link_: string){
+      this.router.navigateByUrl(link_);
+      this.sideMenu.closeSideMenu();
+    }
 }

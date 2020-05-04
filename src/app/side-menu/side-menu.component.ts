@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { BACKGROUND_PATH, BACKGROUNDS_NAME } from 'src/constants/backgrounds-paths';
+import { MatSidenavContainer, MatSidenavContent } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-side-menu',
@@ -7,6 +8,8 @@ import { BACKGROUND_PATH, BACKGROUNDS_NAME } from 'src/constants/backgrounds-pat
   styleUrls: ['./side-menu.component.scss']
 })
 export class SideMenuComponent implements OnInit {
+
+  @ViewChild("sidenavContainer",{read: MatSidenavContainer, static: false}) sidenavContainer: MatSidenavContainer;
 
   constructor() { }
   
@@ -22,5 +25,8 @@ export class SideMenuComponent implements OnInit {
     return result;
   }
 
+  public closeSideMenu(){
+   this.sidenavContainer.close();
+  }
 
 }
