@@ -21,11 +21,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button'; 
+import {MatGridListModule} from '@angular/material/grid-list'; 
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { LoadingPageComponent } from './loading-page/loading-page.component'; 
 import { RouterModule, Routes } from '@angular/router';
 import { SideMenuListComponent } from './side-menu-list/side-menu-list.component';
 import { NewsPageComponent } from './news-page/news-page.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 const appRoutes: Routes = [  
@@ -50,7 +52,8 @@ const appRoutes: Routes = [
     SideMenuComponent,
     LoadingPageComponent,
     SideMenuListComponent,
-    NewsPageComponent
+    NewsPageComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,6 +68,7 @@ const appRoutes: Routes = [
     MatSidenavModule,
     MatButtonModule,
     MatProgressSpinnerModule,
+    MatGridListModule,
     RouterModule.forRoot(appRoutes),
   ],
   providers: [],
