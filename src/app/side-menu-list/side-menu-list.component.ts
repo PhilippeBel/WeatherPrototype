@@ -15,7 +15,7 @@ export class SideMenuListComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    this.elements.push({link: "",icon: "wi-day-sunny", text: "News" } as SideMenuElement);
+    this.elements.push({link: "/news",icon: "wi-day-sunny", text: "News" } as SideMenuElement);
     this.elements.push({link: "/cities",icon: "wi-day-sunny-overcast", text: "Current conditions" } as SideMenuElement);
     this.elements.push({link: "/warnings",icon: "wi-storm-warning", text: "Watches & Warnings" } as SideMenuElement);
     this.elements.push({link: "/radar",icon: "wi-rain", text: "Radar" } as SideMenuElement); 

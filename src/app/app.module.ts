@@ -25,13 +25,15 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { LoadingPageComponent } from './loading-page/loading-page.component'; 
 import { RouterModule, Routes } from '@angular/router';
 import { SideMenuListComponent } from './side-menu-list/side-menu-list.component';
+import { NewsPageComponent } from './news-page/news-page.component';
 
 
 const appRoutes: Routes = [  
 {path: 'city/:id', component: CityPageComponent},
 {path: 'cities', component: ListCitiesComponent},
+{path: 'news', component: NewsPageComponent},
 {path: '', redirectTo: 'cities', pathMatch: 'full' },
-{path: '**', redirectTo: 'cities'}
+{path: '**', redirectTo: 'cities'},
 ];
 
 @NgModule({
@@ -47,7 +49,8 @@ const appRoutes: Routes = [
     CityPageComponent,
     SideMenuComponent,
     LoadingPageComponent,
-    SideMenuListComponent
+    SideMenuListComponent,
+    NewsPageComponent
   ],
   imports: [
     BrowserModule,
