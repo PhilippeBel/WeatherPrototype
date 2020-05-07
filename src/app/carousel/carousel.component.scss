@@ -1,4 +1,10 @@
+.carousel-container{
+    position: relative;
+    overflow-x: hidden;
+}
+
 .carousel{
+    position: relative;
     width: 100%;
     align-items: left;
     margin: 0px;

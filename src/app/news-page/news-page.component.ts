@@ -21,5 +21,4 @@ export class NewsPageComponent implements OnInit {
       }
     );
   }
-
 }
