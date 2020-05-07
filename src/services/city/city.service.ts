@@ -11,11 +11,11 @@ export class CityService {
 
   constructor() { }
 
-  getCities(): Observable<City[]> {    
+  public getCities(): Observable<City[]> {    
     return of(CITIES_MOCK).pipe(delay(500));
   }
 
-  getCity(id: number): Observable<City> {    
+  public getCity(id: number): Observable<City> {    
     return of(CITIES_MOCK.find(city => city.id == id)).pipe(delay(500));
   }
 }

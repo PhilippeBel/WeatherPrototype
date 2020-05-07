@@ -1,2 +1,2 @@
-
-   <app-carousel></app-carousel>
+<app-loading-page *ngIf="!newsList"></app-loading-page>
+<app-carousel *ngIf="newsList" [newsList]="newsList"></app-carousel>
