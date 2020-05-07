@@ -11,4 +11,19 @@ export const NEWS_MOCK : News[] = [
       description:"Learn how the doppler effect is used to detect rain and thunderstorms.",
        articlePath: "article-1.html"} as News,
 
+       {id: 2, title:"Article 3",
+       imagePath:"tornado.jpg",
+       description:"Learn how the doppler effect is used to detect rain and thunderstorms.",
+        articlePath: "article-1.html"} as News,
+
+        {id: 3, title:"Article 4",
+        imagePath:"radar.gif",
+        description:"Learn how the doppler effect is used to detect rain and thunderstorms.",
+         articlePath: "article-1.html"} as News,
+
+         {id: 3, title:"Last Article",
+         imagePath:"tornado.jpg",
+         description:"Learn how the doppler effect is used to detect rain and thunderstorms.",
+          articlePath: "article-1.html"} as News,
+
 ];

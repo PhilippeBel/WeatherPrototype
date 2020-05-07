@@ -1,8 +1,10 @@
 <mat-card class="text-light pt-3 main-card">
     <mat-card-title>News:</mat-card-title>
+    <button mat-button (click)="previousSlide()"> prev </button>
+    <button mat-button (click)="nextSlide()"> next </button>
 
 <mat-grid-list class="carousel" cols="2" rowHeight="1:1" >
-    <mat-grid-tile class="carousel-tile" *ngFor="let news of newsList">
+    <mat-grid-tile class="carousel-tile" *ngFor="let news of newsDisplayed">
     <img class="carousel-image" src="assets\news\pictures\{{news.imagePath}}">
     <div class="title-background"></div>
     <div class="description-background"></div>
