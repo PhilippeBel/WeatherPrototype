@@ -1,3 +1,3 @@
 <div class="wbar alert alert-danger text-center" [ngStyle]="{'top': height, 'visibility': visi}">
-    <strong>{{title}}: </strong>in effect until January 31, 6:00 PM EST. <button class="btn btn-danger btn-sm x-btn" (click)="onClick()">X</button>
+    <strong>{{title}}</strong> <span *ngIf="displayDescription"> : in effect until January 31, 6:00 PM EST.</span>  <button class="btn btn-danger btn-sm x-btn" (click)="onClick()">X</button>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Observable, timer } from 'rxjs';
 
 @Component({
@@ -8,9 +8,11 @@ import { Observable, timer } from 'rxjs';
 })
 
 export class WarningBarComponent implements OnInit {
+  
+  @Input() title: string;
+  @Input() displayDescription: boolean;
 
   initTop: number;
-  title: string;
   frame: number;
   top: number;
   height: string;
@@ -27,9 +29,6 @@ export class WarningBarComponent implements OnInit {
     this.visi = "hidden"; }
 
   ngOnInit() {
-    this.title = "Winter storm warning";
-
-
     this.everyFrame.subscribe((seconds) => this.Update());
   }
 
