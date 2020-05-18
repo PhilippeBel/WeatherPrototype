@@ -9,7 +9,7 @@ import { MatSidenavContainer, MatSidenavContent } from '@angular/material/sidena
 })
 export class SideMenuComponent implements OnInit {
 
-  @ViewChild("sidenavContainer",{read: MatSidenavContainer, static: false}) sidenavContainer: MatSidenavContainer;
+  @ViewChild("sidenavContainer",{ read: MatSidenavContainer }) sidenavContainer: MatSidenavContainer;
 
   constructor() { }
   
